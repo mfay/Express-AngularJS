@@ -2,8 +2,8 @@
 	angular.module("vsd")
 	.config(function($routeProvider) {
 		$routeProvider.when('/notes', {
-			templateUrl: '/ng/notes/index.html'
-		})
-		.otherwise({redirectTo: "/"});
+			templateUrl: '/ng/notes/index.html',
+			controller: 'NotesIndexController'
+		});
 	});
 })();
