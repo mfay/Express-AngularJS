@@ -7,7 +7,7 @@ module.exports = function (grunt) {
 	grunt.initConfig({
 		watch: {
 			ng: {
-				files: ['public/js/ng/**/*.js', 'public/js/ng/*.js'],
+				files: ['public/ng/**/*.js', 'public/ng/*.js'],
 				tasks: ['uglify:ng']
 			}	
 		},
@@ -49,7 +49,7 @@ module.exports = function (grunt) {
 					compress: false
 				},
 				files: { 
-					'public/js/app.js': ['public/js/ng/app.js','public/js/ng/**/*.js']
+					'public/js/app.js': ['public/ng/app.js','public/ng/**/*.js']
 				}
 			}	
 		},
